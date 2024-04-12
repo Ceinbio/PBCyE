@@ -1,0 +1,26 @@
+
+#
+ &cntrl
+      nscm=1000,
+      ntx=5, irest=1,
+      ntwv=0, ntpr=10000, ntwx=10000, ntwr=10000,
+      ntb=2,
+      nstlim=50000000, dt=.002,
+      cut=10.0,
+      ntf=2, ntc=2,
+      ntt=1, ntp=1,
+      temp0=300.0, tautp=2.0,
+      nrespa=1,
+      ioutfm=1,
+      ig=-1,
+      barostat=2
+/
+&wt
+ type='DUMPFREQ', istep1=100,
+&end
+&wt
+ type="END",
+&end
+ DISANG=SS.rst
+ DUMPAVE=SS.dat
+END
